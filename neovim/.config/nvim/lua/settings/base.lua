@@ -2,14 +2,14 @@ local g = vim.g
 local o = vim.o
 local cmd = vim.cmd
 
-vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
+vim.keymap.set("i", "jk", "<Esc>", { noremap = true })
 
-o.encoding = 'UTF-8'
+o.encoding = "UTF-8"
 
 o.relativenumber = true
 
 -- Allow mouse clicks
-o.mouse = 'a'
+o.mouse = "a"
 
 -- Show matching parens
 o.showmatch = true
@@ -21,8 +21,8 @@ o.hlsearch = true
 o.incsearch = true
 
 -- Map <leader> to ','
-g.mapleader = ','
-g.maplocalleader= ','
+g.mapleader = ","
+g.maplocalleader = ","
 
 -- Number of columns occupied by a tab
 o.tabstop = 4
@@ -40,28 +40,27 @@ o.shiftwidth = 4
 o.autoindent = true
 
 -- Bash-like tab completions
-o.wildmode = 'longest,list'
+o.wildmode = "longest,list"
 
 -- 80 column border
-cmd('set cc=80')
+cmd("set cc=80")
 
 -- Set color for border highlight
-cmd('highlight ColorColumn ctermbg=238')
+cmd("highlight ColorColumn ctermbg=238")
 
 -- Allow auto-indenting depending on file type
-cmd('filetype plugin indent on')
+cmd("filetype plugin indent on")
 
 -- Syntax highlighting
-cmd('syntax on')
+cmd("syntax on")
 
 -- Use system clipboard with +
-cmd('set clipboard+=unnamedplus')
+cmd("set clipboard+=unnamedplus")
 
-cmd('filetype plugin on')
+cmd("filetype plugin on")
 
 -- Highlight current cursorline
 -- o.cursorline = true
 
 -- Speed up scrolling in Vim
 o.ttyfast = true
-
