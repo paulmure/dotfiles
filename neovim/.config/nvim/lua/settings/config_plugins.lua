@@ -212,3 +212,6 @@ require("nvim-treesitter.configs").setup({
 
 -- Comment
 require("Comment").setup()
+
+-- vimtex
+vim.cmd("let g:vimtex_view_method = 'zathura'")
