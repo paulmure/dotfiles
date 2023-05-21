@@ -43,7 +43,7 @@ o.autoindent = true
 o.wildmode = 'longest,list'
 
 -- 80 column border
-o.cc = 80
+cmd('set cc=80')
 
 -- Set color for border highlight
 cmd('highlight ColorColumn ctermbg=238')
@@ -60,11 +60,8 @@ cmd('set clipboard+=unnamedplus')
 cmd('filetype plugin on')
 
 -- Highlight current cursorline
-o.cursorline = true
+-- o.cursorline = true
 
 -- Speed up scrolling in Vim
 o.ttyfast = true
-
--- Directory to store backup files
-o.backupdir = '~/.cache/vim'
 
