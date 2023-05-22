@@ -55,4 +55,7 @@ return require("packer").startup(function(use)
 
 	-- LaTex
 	use("lervag/vimtex")
+
+	-- vim-slime for REPL
+	use("jpalardy/vim-slime")
 end)

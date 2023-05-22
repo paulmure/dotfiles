@@ -160,6 +160,7 @@ cmp.setup({
 local function on_rust_attach(client, buffer)
 	-- This callback is called when the LSP is atttached/enabled for this buffer
 	-- we could set keymaps related to LSP, etc here.
+	require("settings.lsp.handlers").on_attach(client, buffer)
 end
 
 -- Configure LSP through rust-tools.nvim plugin.
@@ -184,6 +185,7 @@ local rust_opts = {
 	server = {
 		-- on_attach is a callback called when the language server attachs to the buffer
 		on_attach = on_rust_attach,
+		capabilities = require("settings.lsp.handlers").capabilities,
 		settings = {
 			-- to enable rust-analyzer settings visit:
 			-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
@@ -220,3 +222,16 @@ require("Comment").setup()
 
 -- vimtex
 vim.cmd("let g:vimtex_view_method = 'zathura'")
+
+-- vim-slime
+vim.cmd('let g:slime_target = "screen"')
+
+-- Julia fix formatter issue
+vim.cmd([[
+autocmd FileType Julia call Julia_settings()
+
+function! Julia_settings()
+  setlocal nofixeol
+  setlocal binary nofixeol
+endfunction
+]])
