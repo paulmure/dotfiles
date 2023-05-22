@@ -6,6 +6,11 @@ vim.keymap.set("n", "<leader>n", [[:NvimTreeToggle]], {})
 -- Formatting shortcut
 vim.keymap.set("n", "<leader>f", ":lua vim.lsp.buf.format()<cr>", {})
 
+-- Telescope
+vim.keymap.set("n", "<C-p>", ":Telescope find_files<cr>", {})
+vim.keymap.set("n", "<C-g>", ":Telescope live_grep<cr>", {})
+vim.keymap.set("n", "<C-S-g>", ":Telescope grep_string<cr>", {})
+
 --   פּ ﯟ   some other good icons
 local kind_icons = {
 	Text = "",
