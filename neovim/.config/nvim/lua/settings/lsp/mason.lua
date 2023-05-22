@@ -1,3 +1,11 @@
+-- Servers to install
+--     ◍ beautysh
+--     ◍ codelldb
+--     ◍ julia-lsp julials
+--     ◍ lua-language-server lua_ls
+--     ◍ pyright
+--     ◍ rust-analyzer rust_analyzer
+
 local servers = {
 	"lua_ls",
 	"pyright",
