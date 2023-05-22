@@ -228,7 +228,7 @@ vim.cmd('let g:slime_target = "screen"')
 
 -- Julia fix formatter issue
 vim.cmd([[
-autocmd FileType Julia call Julia_settings()
+autocmd FileType julia call Julia_settings()
 
 function! Julia_settings()
   setlocal nofixeol
