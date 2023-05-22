@@ -1,5 +1,5 @@
 
 # >>>> Neovim >>>>
-cp -r ./neovim/.config/nvim/ ~/.config/nvim/
+cp -r ./neovim/.config/nvim/ ~/.config/
 # <<<< Neovim <<<<
 
