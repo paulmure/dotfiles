@@ -6,6 +6,7 @@ vim.keymap.set("i", "jk", "<Esc>", { noremap = true })
 
 o.encoding = "UTF-8"
 
+o.number = true
 o.relativenumber = true
 
 -- Allow mouse clicks
