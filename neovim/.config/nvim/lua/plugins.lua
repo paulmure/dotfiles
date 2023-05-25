@@ -49,6 +49,7 @@ return require("packer").startup(function(use)
 
 	-- Syntax
 	use("nvim-treesitter/nvim-treesitter")
+	use("mrjones2014/nvim-ts-rainbow")
 
 	-- Comment
 	use("numToStr/Comment.nvim")
