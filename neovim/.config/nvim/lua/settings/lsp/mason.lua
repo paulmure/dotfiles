@@ -1,17 +1,22 @@
 -- Servers to install
---     ◍ beautysh
---     ◍ buildifier
---     ◍ codelldb
---     ◍ julia-lsp julials
---     ◍ lua-language-server lua_ls
---     ◍ pyright
---     ◍ rust-analyzer rust_analyzer
+-- ◍ golangci-lint  // keywords: go
+-- ◍ beautysh  // keywords: bash, csh, ksh, sh, zsh
+-- ◍ buildifier  // keywords: bazel
+-- ◍ codelldb  // keywords: c, c++, rust
+-- ◍ gofumpt  // keywords: go
+-- ◍ golangci-lint-langserver golangci_lint_ls // keywords: go
+-- ◍ gopls  // keywords: go
+-- ◍ julia-lsp julials // keywords: julia
+-- ◍ lua-language-server lua_ls // keywords: lua
+-- ◍ pyright  // keywords: python
+-- ◍ rust-analyzer rust_analyzer // keywords: rust
 
 local servers = {
 	"lua_ls",
 	"pyright",
 	"julials",
 	"gopls",
+	"golangci_lint_ls",
 }
 
 local settings = {

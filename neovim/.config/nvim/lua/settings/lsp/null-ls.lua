@@ -20,5 +20,6 @@ null_ls.setup({
 		formatting.taplo,
 		formatting.buildifier,
 		diagnostics.buildifier,
+		formatting.gofumpt,
 	},
 })
