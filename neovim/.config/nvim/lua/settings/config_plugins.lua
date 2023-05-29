@@ -236,3 +236,11 @@ function! Julia_settings()
   setlocal binary nofixeol
 endfunction
 ]])
+
+vim.cmd([[
+autocmd FileType tex call Tex_settings()
+
+function! Tex_settings()
+    setlocal spell spelllang=en_us
+endfunction
+]])
