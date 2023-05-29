@@ -63,4 +63,8 @@ return require("packer").startup(function(use)
 	-- bazel
 	use("google/vim-maktaba")
 	use("bazelbuild/vim-bazel")
+
+	-- tabline
+	use("lewis6991/gitsigns.nvim")
+	use("romgrk/barbar.nvim")
 end)

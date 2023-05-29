@@ -1,4 +1,5 @@
 require("nvim-tree").setup({})
+require("settings.barbar").setup()
 
 -- Toggle nvim-tree
 vim.keymap.set("n", "<leader>n", [[:NvimTreeToggle]], {})
