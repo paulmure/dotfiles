@@ -237,6 +237,7 @@ function! Julia_settings()
 endfunction
 ]])
 
+-- Latex spell checking
 vim.cmd([[
 autocmd FileType tex call Tex_settings()
 

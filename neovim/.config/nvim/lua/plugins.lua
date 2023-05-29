@@ -59,4 +59,8 @@ return require("packer").startup(function(use)
 
 	-- vim-slime for REPL
 	use("jpalardy/vim-slime")
+
+	-- bazel
+	use("google/vim-maktaba")
+	use("bazelbuild/vim-bazel")
 end)

@@ -1,5 +1,6 @@
 -- Servers to install
 --     ◍ beautysh
+--     ◍ buildifier
 --     ◍ codelldb
 --     ◍ julia-lsp julials
 --     ◍ lua-language-server lua_ls
@@ -10,6 +11,7 @@ local servers = {
 	"lua_ls",
 	"pyright",
 	"julials",
+	"gopls",
 }
 
 local settings = {
