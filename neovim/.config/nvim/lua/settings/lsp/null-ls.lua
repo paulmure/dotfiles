@@ -21,5 +21,6 @@ null_ls.setup({
 		formatting.buildifier,
 		diagnostics.buildifier,
 		formatting.gofumpt,
+		diagnostics.yamllint,
 	},
 })
