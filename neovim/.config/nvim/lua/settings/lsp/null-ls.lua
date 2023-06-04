@@ -15,7 +15,7 @@ null_ls.setup({
 	sources = {
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-		diagnostics.flake8,
+		diagnostics.flake8.with({ extra_args = { "--max-line-length", "100" } }),
 		formatting.beautysh,
 		formatting.taplo,
 		formatting.buildifier,
