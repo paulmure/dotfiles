@@ -32,7 +32,7 @@ o.tabstop = 4
 o.softtabstop = 4
 
 -- Convert tabs to white spaces
-o.expandtab = 4
+o.expandtab = true
 
 -- Width for autoindents
 o.shiftwidth = 4
