@@ -195,6 +195,23 @@ local rust_opts = {
 				checkOnSave = {
 					command = "clippy",
 				},
+				imports = {
+					granularity = {
+						group = "module",
+					},
+					prefix = "self",
+				},
+				cargo = {
+					buildScripts = {
+						enable = true,
+					},
+				},
+				procMacro = {
+					enable = true,
+				},
+				hover = {
+					linksInHover = false,
+				},
 			},
 		},
 	},
