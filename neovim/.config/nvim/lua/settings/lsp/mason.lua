@@ -1,15 +1,16 @@
 -- Installed
--- ◍ beautysh
--- ◍ codelldb
--- ◍ gofumpt
--- ◍ golangci-lint-langserver golangci_lint_ls
--- ◍ gopls
--- ◍ julia-lsp julials
--- ◍ lua-language-server lua_ls
--- ◍ pyright
--- ◍ rust-analyzer rust_analyzer
--- ◍ yaml-language-server yamlls
--- ◍ yamllint
+--   ◍ beautysh
+--   ◍ codelldb
+--   ◍ gofumpt
+--   ◍ golangci-lint-langserver golangci_lint_ls
+--   ◍ gopls
+--   ◍ julia-lsp julials
+--   ◍ lua-language-server lua_ls
+--   ◍ pyright
+--   ◍ rust-analyzer rust_analyzer
+--   ◍ taplo
+--   ◍ yaml-language-server yamlls
+--   ◍ yamllint
 
 local servers = {
 	"lua_ls",
