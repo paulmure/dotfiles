@@ -1,4 +1,4 @@
-require("nvim-tree").setup({})
+require("nvim-tree").setup({ update_focused_file = { enable = true } })
 require("settings.barbar").setup()
 
 -- Toggle nvim-tree
@@ -240,7 +240,7 @@ require("nvim-treesitter.configs").setup({
 require("Comment").setup()
 
 -- vimtex
-vim.cmd("let g:vimtex_view_method = 'zathura'")
+vim.cmd("let g:vimtex_view_general_viewer='chrome'")
 
 -- vim-slime
 vim.cmd('let g:slime_target = "screen"')
