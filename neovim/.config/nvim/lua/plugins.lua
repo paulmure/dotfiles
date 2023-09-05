@@ -63,4 +63,7 @@ return require("packer").startup(function(use)
 	-- tabline
 	use("lewis6991/gitsigns.nvim")
 	use("romgrk/barbar.nvim")
+
+	-- coq
+	use("whonore/Coqtail")
 end)
