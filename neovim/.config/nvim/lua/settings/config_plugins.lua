@@ -263,3 +263,10 @@ function! Tex_settings()
     setlocal spell spelllang=en_us
 endfunction
 ]])
+
+require("lean").setup({
+	lsp = {
+		on_attach = require("settings.lsp.handlers").on_attach,
+	},
+	mappings = true,
+})

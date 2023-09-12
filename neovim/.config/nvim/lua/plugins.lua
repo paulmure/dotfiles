@@ -66,4 +66,7 @@ return require("packer").startup(function(use)
 
 	-- coq
 	use("whonore/Coqtail")
+
+	-- lean
+	use("Julian/lean.nvim")
 end)
